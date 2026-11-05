@@ -1,13 +1,13 @@
 {
-  "name": "Seudonimizador SIM",
-  "short_name": "Seudonimizador",
+  "name": "Custos Nominum",
+  "short_name": "Custos Nominum",
   "description": "Seudonimiza expedientes SIM en el dispositivo, sin internet, y devuelve los nombres reales al final.",
   "lang": "es",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "background_color": "#F6F7F5",
-  "theme_color": "#1F5F5B",
+  "theme_color": "#14263B",
   "icons": [
     {
       "src": "icon-192.png",
