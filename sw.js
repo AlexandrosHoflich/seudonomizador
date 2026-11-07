@@ -5,8 +5,8 @@
 //    (otra página del mismo sitio no puede reemplazarla por una falsa) y solo se guarda una página que coincide;
 //  · si la red tarda más de 3 segundos (señal débil), se usa la copia guardada ya comprobada;
 //  · la app puede pedir esta huella para mostrarla en «Sobre esta aplicación» y compararla con la del INFORME del Lenovo.
-const CACHE = 'seudonimizador-v0.16.0-f962a2030f';
-const HUELLA = 'f962a2030f0a49c56f74515c86e88234dca6cb5d6f47974d1fff7db12dbfd7c6';
+const CACHE = 'seudonimizador-v0.17.0-92fde191e2';
+const HUELLA = '92fde191e26dd2ed307d7976d84109bb7441317191eab765786faddaf21eeffa';
 const FILES = ['./', './index.html', './manifest.webmanifest', './icon-180.png', './icon-192.png', './icon-512.png'];
 const hex = b => [...new Uint8Array(b)].map(x => x.toString(16).padStart(2, '0')).join('');
 const okPage = async r => r && r.ok && hex(await crypto.subtle.digest('SHA-256', await r.clone().arrayBuffer())) === HUELLA;
